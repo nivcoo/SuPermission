@@ -1,0 +1,6 @@
+name: SuPermission
+version: 1.0.0
+api-version: 1.15
+author: nivcoo
+main: fr.nivcoo.supermission.SuPermission
+loadbefore: [SuperiorSkyblock2]
