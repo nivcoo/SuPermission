@@ -9,7 +9,8 @@ import com.bgsoftware.superiorskyblock.api.events.PluginInitializeEvent;
 import com.bgsoftware.superiorskyblock.api.island.Island;
 import com.bgsoftware.superiorskyblock.api.island.IslandPrivilege;
 
-import n3kas.ae.api.EffectActivationEvent;
+import net.advancedplugins.ae.api.EffectActivationEvent;
+
 
 public class EnchantmentCustom implements Listener {
 	
@@ -23,11 +24,8 @@ public class EnchantmentCustom implements Listener {
 		ENCHANTMENT_CUSTOM = IslandPrivilege.getByName("ENCHANTMENT_CUSTOM");
 	}
 
-	
 	@EventHandler
 	public void onEffectActivationEvent(EffectActivationEvent e) {
-		
-
 		
 		if(!(e.getMainEntity() instanceof Player) || e.isRemoval())
 			return;
