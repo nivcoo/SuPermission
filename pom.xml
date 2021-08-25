@@ -26,6 +26,10 @@
 			<id>jitpack.io</id>
 			<url>https://jitpack.io</url>
 		</repository>
+		<repository>
+			<id>bgsoftware</id>
+			<url>https://repo.bg-software.com/repository/api/</url>
+		</repository>
 	</repositories>
 
 	<dependencies>
@@ -39,6 +43,13 @@
 			<groupId>com.destroystokyo.paper</groupId>
 			<artifactId>paper-api</artifactId>
 			<version>1.12.2-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.bgsoftware</groupId>
+			<artifactId>WildStackerAPI</artifactId>
+			<version>latest</version>
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
