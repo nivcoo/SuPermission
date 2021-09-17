@@ -39,6 +39,7 @@
 			<version>b17</version>
 		</dependency>
 
+		<!-- PaperMC API 1.12.2 -->
 		<dependency>
 			<groupId>com.destroystokyo.paper</groupId>
 			<artifactId>paper-api</artifactId>
