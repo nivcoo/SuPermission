@@ -27,7 +27,7 @@ public class EssentialsFly implements Listener, CommandExecutor {
     }
 
     private void setFly(Player p) {
-        if (!p.getAllowFlight() || !p.isFlying() || p.getGameMode().equals(GameMode.CREATIVE))
+        if (!p.isFlying() || !p.getAllowFlight() || p.getGameMode().equals(GameMode.CREATIVE))
             return;
         Island island = SuperiorSkyblockAPI.getIslandAt(p.getLocation());
         if (island == null)
@@ -42,9 +42,7 @@ public class EssentialsFly implements Listener, CommandExecutor {
 
     @EventHandler
     public void onMoveEvent(PlayerMoveEvent e) {
-        Player p = e.getPlayer();
-
-        setFly(p);
+        setFly(e.getPlayer());
     }
 
     @Override
