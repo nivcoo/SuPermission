@@ -5,7 +5,7 @@
 
     <groupId>fr.nivcoo</groupId>
     <artifactId>SuPermission</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -19,29 +19,28 @@
 
     <repositories>
         <repository>
-            <id>bgsoftware</id>
+            <id>bg-repo</id>
             <url>https://repo.bg-software.com/repository/api/</url>
         </repository>
         <repository>
             <id>papermc</id>
-            <url>https://papermc.io/repo/repository/maven-public/</url>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
     </repositories>
 
     <dependencies>
 
-        <!-- PaperMC API 1.12.2 -->
         <dependency>
-            <groupId>com.destroystokyo.paper</groupId>
+            <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
-            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <version>1.20.6-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>com.bgsoftware</groupId>
             <artifactId>SuperiorSkyblockAPI</artifactId>
-            <version>1.8.3</version>
+            <version>2024.4</version>
             <scope>provided</scope>
         </dependency>
 
