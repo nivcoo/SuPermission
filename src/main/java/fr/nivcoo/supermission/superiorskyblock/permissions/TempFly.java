@@ -34,7 +34,7 @@ public class TempFly implements Listener, CommandExecutor {
         if (island == null)
             return;
 
-        if (!island.hasPermission(p, TEMP_FLY)) {
+        if (!island.isSpawn() && !island.hasPermission(p, TEMP_FLY)) {
             p.sendMessage(cancelMessage);
             p.setFlying(false);
             p.performCommand("fly");
