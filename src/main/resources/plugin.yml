@@ -4,3 +4,7 @@ api-version: 1.20
 author: nivcoo
 main: fr.nivcoo.supermission.SuPermission
 loadbefore: [ SuperiorSkyblock2 ]
+permissions:
+  supermission.bypass.fly:
+    description: Bypass fly restrictions
+    default: op

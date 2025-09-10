@@ -28,7 +28,7 @@ public class TempFly implements Listener, CommandExecutor {
     }
 
     private void setFly(Player p) {
-        if (!p.isFlying() || !p.getAllowFlight() || p.getGameMode().equals(GameMode.CREATIVE))
+        if (!p.isFlying() || !p.getAllowFlight() || p.getGameMode().equals(GameMode.CREATIVE) || p.hasPermission("supermission.bypass.fly"))
             return;
         Island island = SuperiorSkyblockAPI.getIslandAt(p.getLocation());
         if (island == null)
@@ -67,6 +67,8 @@ public class TempFly implements Listener, CommandExecutor {
     @EventHandler
     public void preProcessCommand(PlayerCommandPreprocessEvent e) {
         Player p = e.getPlayer();
+        if(p.hasPermission("supermission.bypass.fly"))
+            return;
         if (e.getMessage().equalsIgnoreCase("/fly") || e.getMessage().equalsIgnoreCase("/tempfly") || e.getMessage().equalsIgnoreCase("/tempfly:tempfly")) {
 
             Island island = SuperiorSkyblockAPI.getIslandAt(p.getLocation());
